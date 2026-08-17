@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compra suplementos deportivos en Colombia con envío nacional y pago contraentrega." />
+  <meta name="keywords" content="suplementos deportivos Colombia, proteína whey, creatina, pre entreno, comprar contraentrega" />
+  <meta name="theme-color" content="#d5a83d" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <title>Contraentrega Store | Suplementos deportivos contraentrega</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Imágenes responsivas: se escalan para caber y mantener proporción */
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 80vh;
+      display: block;
+      margin: 0.25rem auto;
+      object-fit: contain;
+    }
+    /* Contenedor opcional para limitar imágenes muy anchas */
+    .img-wrap {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    /* Asegurar que las imágenes dentro del modal también se ajusten */
+    .modal-main-image img, .modal-gallery img, .modal-thumbs img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">🚚 Envíos a toda Colombia <span></span> 💵 Pagas al recibir tu pedido</div>
+  <header class="header"><a class="brand" href="#inicio"><i>↗</i> CONTRA<span>ENTREGA</span><small>STORE</small></a><button class="menu" aria-label="Abrir menú">☰</button><nav><a href="#inicio">Inicio</a><a href="#productos" data-filter="hogar">Hogar</a><a href="#productos" data-filter="salud">Salud & bienestar</a><a href="#productos" data-filter="tecnologia">Tecnología</a><a href="#productos" data-filter="suplementos">Suplementos</a></nav><a class="cart" id="cart-button" href="#carrito" aria-label="Ver carrito">🛒 <b>Carrito</b><span id="cart-count">0</span></a></header>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy"><p class="eyebrow">✦ COMPRA SIN RIESGOS</p><h1>Productos que necesitas,<br><em>directamente hasta tu puerta.</em></h1><p class="lead">Encuentra soluciones para tu hogar, bienestar, tecnología y gimnasio. Recibe en casa y <strong>paga solo al recibir.</strong></p><div class="actions"><a class="button primary" href="#productos">🛒 Ver productos</a></div><div class="trust-row"><div>🚚<small>Envíos a<br><b>todo Colombia</b></small></div><div>💵<small>Paga<br><b>contraentrega</b></small></div><div>🔒<small>Compra<br><b>100% segura</b></small></div></div></div>
+      <div class="hero-image"><div class="hero-badge"><b>+2.000</b><small>clientes felices</small><span>★★★★★</span></div><div class="save-badge">Hasta <b>40%<br>OFF</b></div></div>
+    </section>
+    <section id="categorias" class="section categories"><div class="section-heading"><p class="eyebrow">ENCUENTRA LO QUE BUSCAS</p><h2>Compra por categoría</h2><a href="#productos" data-filter="todos">Ver todo →</a></div><div class="category-grid"><a class="category home" href="#productos" data-filter="hogar"><span>🏠</span><div><h3>Hogar</h3><p>Soluciones que simplifican tu vida.</p><b>Ver productos →</b></div></a><a class="category health" href="#productos" data-filter="salud"><span>💪</span><div><h3>Salud & bienestar</h3><p>Cuida de ti y de los tuyos.</p><b>Ver productos →</b></div></a><a class="category tech" href="#productos" data-filter="tecnologia"><span>📱</span><div><h3>Tecnología</h3><p>Gadgets útiles para cada día.</p><b>Ver productos →</b></div></a><a class="category supplements" href="#productos" data-filter="suplementos"><span>🏋️</span><div><h3>Suplementos</h3><p>Complementa tu rutina de gimnasio.</p><b>Ver productos →</b></div></a></div></section>
+    <section id="productos" class="section products"><div class="section-heading"><div><p class="eyebrow orange">PRODUCTOS DISPONIBLES</p><h2 id="catalog-title">Catálogo</h2></div><a href="#categorias" data-filter="todos">Ver todo →</a></div><div class="product-grid"></div></section>
+    
+    
+    <section class="section how"><p class="eyebrow">ASÍ DE FÁCIL</p><h2>¿Cómo funciona?</h2><p class="intro">Comprar contraentrega nunca fue tan sencillo.</p><div class="steps"><div><b>1</b><span>🛍️</span><h3>Elige</h3><p>Selecciona el producto que quieres.</p></div><div><b>2</b><span>📝</span><h3>Haz tu pedido</h3><p>Ingresa tus datos y dirección.</p></div><div><b>3</b><span>📞</span><h3>Confirmamos</h3><p>Te contactamos para confirmar.</p></div><div><b>4</b><span>🚚</span><h3>Enviamos</h3><p>Despachamos hasta tu domicilio.</p></div><div><b>5</b><span>💵</span><h3>Recibe y paga</h3><p>Recibe tu pedido y paga al recibir.</p></div></div></section>
+    <section class="confidence"><div><p class="eyebrow">💚 COMPRA CON CONFIANZA</p><h2>Tu tranquilidad es<br>nuestra prioridad.</h2><p>Estamos aquí para que tu compra sea fácil, segura y sin complicaciones.</p></div><div class="checks"><p>✓ <span><b>Pago contraentrega</b> — pagas cuando recibes.</span></p><p>✓ <span><b>Envíos nacionales</b> — llegamos a toda Colombia.</span></p><p>✓ <span><b>Atención personalizada</b> — siempre cerca de ti.</span></p><p>✓ <span><b>Compra sencilla</b> — pocos pasos, cero complicaciones.</span></p></div></section>
+    <section class="section testimonials"><p class="eyebrow">★★★★★ CLIENTES FELICES</p><h2>Lo que dicen nuestros clientes</h2><p class="demo">Testimonios demostrativos; reemplázalos por reseñas verificadas.</p><div class="testimonial-grid"><figure><div class="stars">★★★★★</div><blockquote>“Me encantó que pude pagar cuando recibí. El pedido llegó rápido y en perfecto estado.”</blockquote><figcaption><b>Laura Martínez</b><small>Bogotá D.C.</small></figcaption></figure><figure><div class="stars">★★★★★</div><blockquote>“Compré el masajeador y funciona muy bien. La atención por WhatsApp fue excelente.”</blockquote><figcaption><b>Andrés Rojas</b><small>Medellín</small></figcaption></figure><figure><div class="stars">★★★★★</div><blockquote>“El proceso fue muy sencillo y me avisaron de todo. Volveré a comprar sin duda.”</blockquote><figcaption><b>Carolina Vélez</b><small>Cali</small></figcaption></figure></div></section>
+    <section id="pedido" class="order"><div><p class="eyebrow">COMPLETA TU PEDIDO</p><h2>¡Estás a un paso<br>de recibirlo en casa!</h2><p>Llena estos datos. Te confirmaremos tu pedido por teléfono o WhatsApp antes de enviarlo.</p><div class="order-perks">✓ Sin pagos en línea &nbsp; ✓ Paga al recibir &nbsp; ✓ Compra segura</div></div><form id="order-form"><label>Nombre completo<input required name="nombre" placeholder="Escribe tu nombre"></label><label>Teléfono<input required type="tel" name="telefono" placeholder="Ej. 300 123 4567"></label><div class="twocol"><label>Departamento<input required name="departamento" placeholder="Ej. Antioquia"></label><label>Ciudad<input required name="ciudad" placeholder="Ej. Medellín"></label></div><label>Dirección completa<input required name="direccion" placeholder="Barrio, calle, número y detalles"></label><label>Producto<select required name="producto" id="product-select"><option value="">Selecciona un producto</option><option>Escoba Mágica 360° — $77.900</option><option>Mini Masajeador Percusión — $104.900</option><option>Audífonos Bluetooth Pro — $76.900</option><option>Lámpara Solar Exterior — $74.900</option><option>Set de 12 Recipientes Herméticos — $89.900</option></select></label><button class="button primary submit" type="submit">🔥 Confirmar mi pedido</button><small>🔒 Tus datos se usan únicamente para gestionar tu pedido.</small></form></section>
+  </main>
+  <footer><a class="brand" href="#inicio"><i>↗</i> CONTRA<span>ENTREGA</span><small>STORE</small></a><p>Productos útiles, ofertas y tecnología hasta tu puerta.</p><div><a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#oferta">Ofertas</a><a href="#inicio">Contacto</a></div><small>© 2026 Contraentrega Store. Todos los derechos reservados.</small></footer>
+  <aside class="cart-panel" id="cart-panel" aria-hidden="true"><div class="cart-head"><h2>Tu carrito</h2><button id="cart-close" aria-label="Cerrar carrito">×</button></div><div id="cart-items"></div><div class="cart-total">Total: <b id="cart-total">$0</b></div><a href="#pedido" id="cart-checkout" class="button primary">Continuar pedido</a></aside><div class="cart-overlay" id="cart-overlay"></div>
+  <div class="modal" id="product-modal" aria-hidden="true"><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" aria-label="Cerrar">×</button><div class="modal-gallery"><div id="modal-main-image" class="modal-main-image"></div><div class="modal-thumbs"><button class="active">Imagen 1</button><button>Imagen 2</button><button>Video</button></div></div><div class="modal-detail"><p class="eyebrow">PRODUCTO DESTACADO</p><h2 id="modal-title"></h2><div class="stars">★★★★★ <small>Producto recomendado</small></div><div class="modal-price" id="modal-price"></div><p id="modal-description"></p><ul><li>✓ Pago contraentrega</li><li>✓ Envío disponible a toda Colombia</li><li>✓ Confirmación por WhatsApp</li></ul><a href="#" id="modal-order" class="button primary">🛒 Agregar al carrito</a></div><div class="reviews"><div class="review-header"><div><h3>Reseñas de clientes</h3><p>Comparte tu experiencia con este producto.</p></div><b>★★★★★</b></div><div class="review-list" id="review-list"></div><form id="review-form" class="review-form"><h3>Escribe una reseña</h3><div class="rating-input" aria-label="Calificación"><button type="button" data-score="1">★</button><button type="button" data-score="2">★</button><button type="button" data-score="3">★</button><button type="button" data-score="4">★</button><button type="button" data-score="5">★</button></div><input required name="reviewer" placeholder="Tu nombre"><textarea required name="comment" placeholder="Cuéntanos qué te pareció el producto" rows="3"></textarea><button class="button primary" type="submit">Publicar reseña</button></form></div></div></div><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script><script src="firebase-catalog.js"></script><script src="app.js"></script>
+</body>
+</html>

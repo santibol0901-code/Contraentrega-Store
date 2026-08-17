@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es-CO"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Administrador | Contraentrega Store</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body class="admin-page">
+<style>
+	/* Resaltar nuevo producto después de guardar */
+	.admin-products article.new{box-shadow:0 8px 30px rgba(213,168,61,0.18);border-color:#e7c66c;transform:translateY(-4px);transition:transform .25s ease,box-shadow .25s ease;border-width:2px}
+	/* Resaltar lista cuando se abre desde el botón */
+	#admin-list.highlight{box-shadow:0 8px 30px rgba(213,168,61,0.18);border:2px solid #e7c66c;padding:8px;transition:box-shadow .25s ease,border-color .25s ease}
+	/* Permitir ocultar la sección de productos en el admin */
+	.admin-products.collapsed{display:none}
+	#admin-list-box{display:block;margin-top:22px;background:linear-gradient(145deg,#171207,#080705);border:1px solid #735a22;box-shadow:10px 13px 0 #020201;padding:18px 16px;border-radius:10px}
+	#admin-list-box.closed{display:none}
+	#admin-list{display:flex;flex-direction:column;gap:10px}
+	#admin-list .row-product{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 12px;border:1px solid #5c441c;border-radius:8px;background:#120d07;color:#f0d17a;font-size:14px}
+	#admin-list .row-product b{font-weight:800}
+	#admin-list .row-product span{color:#dcb85c}
+	#admin-list .row-product .row-actions{display:flex;align-items:center;gap:8px}
+	#admin-list .row-product button{border:0;border-radius:999px;background:#3a1a0a;color:#f6e6b3;font-weight:800;cursor:pointer;padding:6px 10px}
+	#admin-list .row-product input{width:90px;padding:6px 8px;border:1px solid #6f5520;border-radius:6px;background:#0e0b07;color:#f0d17a;font-weight:700}
+	/* Estilos para toast admin */
+	#admin-toast{position:fixed;right:16px;bottom:24px;background:#2c2c2c;color:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.2);opacity:0;transform:translateY(8px);transition:opacity .18s ease,transform .18s ease;z-index:1200}
+	#admin-toast.show{opacity:1;transform:translateY(0)}
+</style>
+<main class="admin-wrap"><a class="brand" href="index.html"><i>↗</i> CONTRA<span>ENTREGA</span><small>STORE</small></a><p class="eyebrow">ÁREA PRIVADA</p><h1>Agregar producto</h1><p class="admin-help">Esta pantalla solo puede abrirse con tus credenciales de administrador. No hay enlaces públicos hacia ella.</p>
+<form id="admin-form" class="admin-form">
+	<label>Nombre del producto<input name="name" required placeholder="Ej. Proteína Whey 2 lb"></label>
+	<label>Precio<input name="price" type="number" min="1" required placeholder="149900"></label>
+	<label>Categoría<select name="category" required>
+		<option value="hogar">Hogar</option>
+		<option value="salud">Salud y bienestar</option>
+		<option value="tecnologia">Tecnología</option>
+		<option value="suplementos">Suplementos</option>
+	</select></label>
+	<label>Descripción<input name="description" placeholder="Descripción breve del producto"></label>
+	<label>Imágenes (sube una o varias)<input name="images" type="file" accept="image/*" multiple></label>
+	<label>Video (opcional)<input name="video" type="file" accept="video/*"></label>
+	<button class="button primary" type="submit">Guardar producto</button>
+	<p id="admin-status" role="status"></p>
+</form>
+<section id="admin-list-box" class="admin-list-box" style="display:block; margin-top:22px; background:linear-gradient(145deg,#171207,#080705); border:2px solid #d5a83d; box-shadow:10px 13px 0 #020201; padding:18px 16px; border-radius:10px;">
+	<h2 style="margin:0 0 12px; color:#f0d17a;">Lista de productos</h2>
+	<div id="admin-list">
+		<p style="margin:0; color:#eac86d;">No hay productos todavía.</p>
+	</div>
+</section>
+</main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script><script src="firebase-catalog.js"></script><script src="admin.js"></script></body></html>

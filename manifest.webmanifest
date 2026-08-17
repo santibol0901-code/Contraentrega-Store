@@ -1,0 +1,10 @@
+{
+  "name": "Contraentrega Store",
+  "short_name": "Contraentrega",
+  "description": "Compra fácil. Recibe en casa. Paga al recibir.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#d5a83d",
+  "lang": "es-CO"
+}
